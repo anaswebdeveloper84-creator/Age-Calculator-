@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Calculator </title>
+</head>
+<body>
+    <center>
+  <h2>Age Calculator </h2>
+  <p id="ageMessage"></p>
+
+  <script>
+    // Ask user for birth year
+    let birthYear = prompt("Enter your birth year:");
+
+    // Get current year
+    let currentYear = new Date().getFullYear();
+
+    // Calculate age
+    let age = currentYear - birthYear;
+
+    // Display message
+    document.getElementById("ageMessage").innerHTML = "You are " + age + " years old.";
+  </script>
+  </center>
+</body>
+</html>
